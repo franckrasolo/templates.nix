@@ -13,8 +13,8 @@
           ];
         };
 
-        rustVersion = "1.68.2";
-      
+        rustVersion = "1.92.0";
+
       in {
         devShell =
           pkgs.mkShell {
@@ -26,6 +26,7 @@
                   "rustc"
                   "rust-src"
                   "rustfmt"
+                  "rust-analyzer"
                 ];
               })
             ];
